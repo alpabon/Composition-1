@@ -7,45 +7,70 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
+      background: url('https://cdn.mos.cms.futurecdn.net/VFLt5vHV7aCoLrLGjP9Qwm-1200-80.jpg') no-repeat center center fixed;
+      background-size: cover;
       margin: 0;
       padding: 0;
       color: #333;
     }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+    }
     .container {
       max-width: 900px;
-      margin: 20px auto;
+      margin: 40px auto;
       padding: 20px;
-      background: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
-    h1, h2 {
+    h1 {
       text-align: center;
       color: #00509e;
+      font-size: 2.2em;
+    }
+    h2 {
+      color: #006699;
+      border-bottom: 3px solid #ff6f61;
+      padding-bottom: 5px;
+      font-size: 1.8em;
+      text-align: center;
     }
     .section {
       margin: 20px 0;
       padding: 15px;
-      background-color: #e3f2fd;
+      background-color: #e8f5e9;
       border-radius: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .section img {
+      max-width: 120px;
+      margin-right: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .pros-cons {
       display: flex;
       justify-content: space-around;
+      gap: 15px;
     }
     .pros-cons div {
       width: 45%;
       padding: 10px;
-      background-color: #f1f8e9;
+      background-color: #ffe0b2;
       border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .pros-cons h3 {
       text-align: center;
       color: #388e3c;
     }
     ul {
-      list-style-type: none;
-      padding: 0;
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #333;
     }
     li {
       padding: 5px 0;
@@ -54,67 +79,78 @@
       text-align: center;
       margin-top: 20px;
       font-size: 0.8em;
-      color: #777;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Artificial Intelligence (AI)</h1>
-    <p><strong>Juan Pabon & Rafael Kawata</strong></p>
+  <div class="overlay">
+    <div class="container">
+      <h1>Artificial Intelligence (AI)</h1>
+      <p><strong>Juan Pabon & Rafael Kawata</strong></p>
 
-    <div class="section">
-      <h2>What is Artificial Intelligence?</h2>
-      <p>AI refers to the ability of machines to perform tasks that normally require human intelligence. These tasks can include learning, reasoning, problem-solving, language understanding, and perception.</p>
-    </div>
-
-    <div class="section">
-      <h2>How AI Works</h2>
-      <p>AI operates through complex algorithms, data processing, and machine learning techniques that allow it to analyze and respond intelligently to data.</p>
-    </div>
-
-    <div class="section">
-      <h2>Key Features and Capabilities</h2>
-      <ul>
-        <li>Learning from data</li>
-        <li>Recognizing patterns</li>
-        <li>Decision making</li>
-        <li>Natural language understanding</li>
-        <li>Adaptability</li>
-      </ul>
-    </div>
-
-    <div class="section pros-cons">
-      <div>
-        <h3>Pros of AI</h3>
-        <ul>
-          <li>Automation of repetitive tasks</li>
-          <li>Increased efficiency</li>
-          <li>Enhanced data analysis</li>
-          <li>Personalization</li>
-        </ul>
+      <div class="section">
+        <img src="https://d3g5ywftkpzr0e.cloudfront.net/wp-content/uploads/2023/07/13220529/Artificial-Intelligence-in-Indonesia-The-current-state-and-its-opportunities.jpeg" alt="AI Overview">
+        <div>
+          <h2>What is Artificial Intelligence?</h2>
+          <p>AI refers to the ability of machines to perform tasks that normally require human intelligence. These tasks can include learning, reasoning, problem-solving, language understanding, and perception.</p>
+        </div>
       </div>
-      <div>
-        <h3>Cons of AI</h3>
-        <ul>
-          <li>Job displacement</li>
-          <li>Privacy concerns</li>
-          <li>Bias in algorithms</li>
-          <li>High development costs</li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="section">
-      <h2>Examples of AI in Daily Life</h2>
-      <ul>
-        <li>Navigation apps like Waze and Google Maps that are going to use real-time traffic updates, predicting arrival times, and avoiding busy routes.
-</li>
-        <li>Virtual assistants like Siri and Alexa that use AI to understand voice commands, answer questions, and help people to simplify their life, such as controlling smart home devices asking them to play songs for example.</li>
-        <li>Personalized recommendations that suggest TV shows and movies based on preferences and previous experiences in platforms like Netflix and Amazon Prime.
-</li>
-        
-      </ul>
+      <div class="section">
+        <img src="https://www.example.com/how_ai_works.jpg" alt="How AI Works">
+        <div>
+          <h2>How AI Works</h2>
+          <p>AI operates through complex algorithms, data processing, and machine learning techniques that allow it to analyze and respond intelligently to data.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <img src="https://www.techasoft.com/blog/2022/12/1669982384.jpeg" alt="Features of AI">
+        <div>
+          <h2>Key Features and Capabilities</h2>
+          <ul>
+            <li>Learning from data</li>
+            <li>Recognizing patterns</li>
+            <li>Decision making</li>
+            <li>Natural language understanding</li>
+            <li>Adaptability</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section pros-cons">
+        <div>
+          <h3>Pros of AI</h3>
+          <ul>
+            <li>Automation of repetitive tasks</li>
+            <li>Increased efficiency</li>
+            <li>Enhanced data analysis</li>
+            <li>Personalization</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cons of AI</h3>
+          <ul>
+            <li>Job displacement</li>
+            <li>Privacy concerns</li>
+            <li>Bias in algorithms</li>
+            <li>High development costs</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <img src="https://codesrevolvewordpress.s3.us-west-2.amazonaws.com/revolveai/2023/04/12100043/examples-of-artificial-intelligence.png" alt="Examples of AI">
+        <div>
+          <h2>Examples of AI in Daily Life</h2>
+          <ul>
+            <li>Navigation apps like Waze and Google Maps that use real-time traffic updates and predict arrival times.</li>
+            <li>Virtual assistants like Siri and Alexa that help simplify daily life and control smart home devices.</li>
+            <li>Personalized recommendations on platforms like Netflix and Amazon Prime.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
