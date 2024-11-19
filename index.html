@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,7 +12,7 @@
       padding: 0;
       color: #333;
     }
-     .work-cited-btn {
+    .work-cited-btn {
       position: fixed;
       top: 10px;
       left: 10px;
@@ -109,7 +108,9 @@
   </style>
 </head>
 <body>
+  <!-- Botón Work Cited -->
   <button class="work-cited-btn" onclick="toggleWorkCited()">Work Cited</button>
+
   <div class="overlay">
     <div class="container">
       <h1>Artificial Intelligence (AI)</h1>
@@ -122,71 +123,14 @@
           <p>AI refers to the ability of machines to perform tasks that normally require human intelligence. These tasks can include learning, reasoning, problem-solving, language understanding, and perception.</p>
         </div>
       </div>
+
+      <!-- Sección Work Cited -->
       <div id="work-cited" class="work-cited">
-      <h2>Work Cited</h2>
-      <p>Alibaba, Cloud. “Ai Capability List.” AI Capability List - Alibaba Cloud, 20 May 2024, www.alibabacloud.com/tech-news/a/ai/gssh8soqd7-ai-capability-list.</p>
-      <p>Coursera Staff. “How Does AI Work? Basics to Know.” Coursera, 26 Oct 2024, https://www.coursera.org/articles/how-does-ai-work?msockid=0a03cb3abcc46fa90d64dfe5bda56ec7. Accessed 12 Nov. 2024.</p>
-      <p>Gent, Edd. “What Is Artificial Intelligence (AI)?” LiveScience, Purch, 14 Apr. 2024, www.livescience.com/technology/artificial-intelligence/what-is-artificial-intelligence-ai.</p>
-      <p>Walz, Riley. “15 Examples of AI in Everyday Life.” Numerous.ai, 27 May 2024, 15 Examples of AI in Everyday Life - Numerous.ai. Accessed 12 Nov. 2024.</p>
-    </div>
-  </div>
-
-      <div class="section">
-        <img src="https://tsdev-ts.s3.amazonaws.com/wp-content/uploads/2019/05/23120104/images.martechadvisor.comai_5cd12cef3902d-6f3e87f6970464aa7891e814c03edce20a07d31f.jpg" alt="How AI Works">
-        <div>
-          <h2>How AI Works</h2>
-          <p>Artificial Intelligence or AI works making computers do the job that usually would require a human being to do. AI operates through algorithms and networks that process a huge amount of data, identifying patterns and correlations in order to give answers and make people’s life easier.
-</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <img src="https://www.techasoft.com/blog/2022/12/1669982384.jpeg" alt="Features of AI">
-        <div>
-          <h2>Key Features and Capabilities</h2>
-          <ul>
-            <li>Learning from data</li>
-            <li>Natural language processing</li>
-            <li>Predictive analytics</li>
-            <li>Computer Vision</li>
-            <li>Adaptability</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="section pros-cons">
-        <div>
-          <h3>Pros of AI</h3>
-          <ul>
-            <li>Eliminates human error and risk</li>
-            <li>24/7 availability</li>
-            <li>Unbiased decision making</li>
-            <li>Cost reduction</li>
-            <li>Data acquisition and analysis</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Cons of AI</h3>
-          <ul>
-            <li>Costly implementation</li>
-            <li>Lack of emotion and creativity</li>
-            <li>Degradation</li>
-            <li>Reduced jobs for humans</li>
-            <li>Ethical problems</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="section">
-        <img src="https://codesrevolvewordpress.s3.us-west-2.amazonaws.com/revolveai/2023/04/12100043/examples-of-artificial-intelligence.png" alt="Examples of AI">
-        <div>
-          <h2>Examples of AI in Daily Life</h2>
-          <ul>
-            <li>Navigation apps like Waze and Google Maps that use real-time traffic updates and predict arrival times.</li>
-            <li>Virtual assistants like Siri and Alexa that help simplify daily life and control smart home devices.</li>
-            <li>Personalized recommendations on platforms like Netflix and Amazon Prime.</li>
-          </ul>
-        </div>
+        <h2>Work Cited</h2>
+        <p>Alibaba, Cloud. “Ai Capability List.” AI Capability List - Alibaba Cloud, 20 May 2024, www.alibabacloud.com/tech-news/a/ai/gssh8soqd7-ai-capability-list.</p>
+        <p>Coursera Staff. “How Does AI Work? Basics to Know.” Coursera, 26 Oct 2024, https://www.coursera.org/articles/how-does-ai-work?msockid=0a03cb3abcc46fa90d64dfe5bda56ec7. Accessed 12 Nov. 2024.</p>
+        <p>Gent, Edd. “What Is Artificial Intelligence (AI)?” LiveScience, Purch, 14 Apr. 2024, www.livescience.com/technology/artificial-intelligence/what-is-artificial-intelligence-ai.</p>
+        <p>Walz, Riley. “15 Examples of AI in Everyday Life.” Numerous.ai, 27 May 2024, 15 Examples of AI in Everyday Life - Numerous.ai. Accessed 12 Nov. 2024.</p>
       </div>
     </div>
   </div>
@@ -194,14 +138,12 @@
   <footer>
     <p>Prepared by Juan Pabon & Rafael Kawata</p>
   </footer>
- <script>
+
+  <!-- Script -->
+  <script>
     function toggleWorkCited() {
       const workCited = document.getElementById('work-cited');
-      if (workCited.style.display === 'none' || workCited.style.display === '') {
-        workCited.style.display = 'block';
-      } else {
-        workCited.style.display = 'none';
-      }
+      workCited.style.display = workCited.style.display === 'none' || workCited.style.display === '' ? 'block' : 'none';
     }
   </script>
 </body>
