@@ -13,6 +13,23 @@
       padding: 0;
       color: #333;
     }
+     .work-cited-btn {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      padding: 10px 15px;
+      background-color: #ff6f61;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .work-cited-btn:hover {
+      background-color: #e0554d;
+    }
     .overlay {
       background-color: rgba(255, 255, 255, 0.9);
       padding: 20px;
@@ -75,6 +92,14 @@
     li {
       padding: 5px 0;
     }
+    .work-cited {
+      display: none;
+      margin-top: 20px;
+      background-color: #f4f4f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
     footer {
       text-align: center;
       margin-top: 20px;
@@ -84,6 +109,7 @@
   </style>
 </head>
 <body>
+  <button class="work-cited-btn" onclick="toggleWorkCited()">Work Cited</button>
   <div class="overlay">
     <div class="container">
       <h1>Artificial Intelligence (AI)</h1>
@@ -96,6 +122,14 @@
           <p>AI refers to the ability of machines to perform tasks that normally require human intelligence. These tasks can include learning, reasoning, problem-solving, language understanding, and perception.</p>
         </div>
       </div>
+      <div id="work-cited" class="work-cited">
+      <h2>Work Cited</h2>
+      <p>Alibaba, Cloud. “Ai Capability List.” AI Capability List - Alibaba Cloud, 20 May 2024, www.alibabacloud.com/tech-news/a/ai/gssh8soqd7-ai-capability-list.</p>
+      <p>Coursera Staff. “How Does AI Work? Basics to Know.” Coursera, 26 Oct 2024, https://www.coursera.org/articles/how-does-ai-work?msockid=0a03cb3abcc46fa90d64dfe5bda56ec7. Accessed 12 Nov. 2024.</p>
+      <p>Gent, Edd. “What Is Artificial Intelligence (AI)?” LiveScience, Purch, 14 Apr. 2024, www.livescience.com/technology/artificial-intelligence/what-is-artificial-intelligence-ai.</p>
+      <p>Walz, Riley. “15 Examples of AI in Everyday Life.” Numerous.ai, 27 May 2024, 15 Examples of AI in Everyday Life - Numerous.ai. Accessed 12 Nov. 2024.</p>
+    </div>
+  </div>
 
       <div class="section">
         <img src="https://tsdev-ts.s3.amazonaws.com/wp-content/uploads/2019/05/23120104/images.martechadvisor.comai_5cd12cef3902d-6f3e87f6970464aa7891e814c03edce20a07d31f.jpg" alt="How AI Works">
@@ -160,5 +194,15 @@
   <footer>
     <p>Prepared by Juan Pabon & Rafael Kawata</p>
   </footer>
+ <script>
+    function toggleWorkCited() {
+      const workCited = document.getElementById('work-cited');
+      if (workCited.style.display === 'none' || workCited.style.display === '') {
+        workCited.style.display = 'block';
+      } else {
+        workCited.style.display = 'none';
+      }
+    }
+  </script>
 </body>
 </html>
